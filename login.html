@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대한항공 모바일 웹/앱</title>
+  <!-- 아이콘 폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- 구글 웹폰트 (나눔고딕) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <!-- css초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+  <!-- 공통서식 -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 로그인 서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!-- 상단헤더영역 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./images/txt_logo.png" alt="대한항공">
+      </a>
+    </h1>
+
+    <img src="./images/toggle.png" id="t_btn" alt="전체메뉴">
+    
+    <a href="login.html" title="로그인하기"><img src="./images/user1.png" alt="로그인" id="login_btn">
+    </a>
+  </header>
+
+  <!-- 2단 내비게이션  -->
+  <nav id="navi">
+    <i class="fas fa-times"></i>
+    <ul class="gnb">
+      <li>
+        <a href="#" title="">메인메뉴1<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴2<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴3<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴4<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴5<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴6<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 메인콘텐츠 영역 -->
+  <main>
+    <section>
+      <h2>로그인</h2>
+    </section>    
+  </main>
+
+  <!-- 푸터영역 -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#" title="개인정보취급방침">개인정보취급방침</a></li>
+        <li><a href="#" title="PC버전보기">PC버전보기</a></li>
+        <li><a href="#" title="앱다운로드">앱다운로드</a></li>
+      </ul>
+    </nav>
+    <p>Copyright&copy; 대한한공 모바일 allrights reserved.</p>
+    <address>   
+      사업자등록번호 0000-000-0000 통신판매업 신고번호 : 강서 제00-0000
+    </address>
+  </footer>
+
+  <script>
+    //1. 버튼 변수 선언
+    const t_btn = document.getElementById('t_btn'); //토글버튼 변수
+    const c_btn = document.querySelector('.fa-times'); //닫기버튼 변수
+    const navi = document.getElementById('navi'); //내비게이션 
+    const mnu = document.querySelectorAll('.gnb > li > a'); //메인메뉴 변수
+
+    //2. 각각 버튼 클릭시 이벤트 동작하기
+    t_btn.addEventListener('click', function(){
+      //window.alert('전체버튼 클릭!!!');
+      navi.style.left='0px';
+    });
+
+    c_btn.addEventListener('click', function(){
+      //window.alert('닫기버튼 클릭');
+      navi.style.left='-100%';
+    });
+
+    //메인메뉴는 하나가 아닌 여러개의 a태그요소 이기 때문에 반복문을 통해 이벤트를 각각 실행해야 함.
+    mnu.forEach(function(item){
+      item.addEventListener('click', function(){
+        //window.alert('클릭');
+        const sub = item.nextElementSibling; //서브변수
+
+        if(sub && sub.classList.contains('sub')){ //만약에 sub에 클래스 이름 sub가 존재한다면
+          event.preventDefault(); //a태그요소는 클릭시 새로고침 기능이 있기 때문에 새로고침이 안되도록 하는 이벤트 객체와 메소드(preventDefault)를 사용하여 방지한다.
+          sub.classList.toggle('act'); //클래스 act를 제거하거나 삽입한다.
+
+          const icon = item.querySelector('.fa-angle-down'); //화살표 아이콘 변수
+          if(icon){ //화살표 아이콘 있는 경우
+            icon.classList.toggle('rotate'); //rotate서식을 적용하거나 제거한다.
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
